@@ -11,7 +11,7 @@ public class HM6 {
         System.out.println(c);
         System.out.println("Угадай число от нуля до десяти. У тебя три попытки");
         Scanner a1 = new Scanner(System.in);
-        for (int i = 0; i < 3; i++) {
+       for (int i = 0; i < 3; i++) {
             if (a1.hasNextInt()) {
                 int a2 = a1.nextInt();
                 if (a2 == c) {
@@ -28,7 +28,7 @@ public class HM6 {
                         System.out.println("До встречи в следующий раз");
                     }
                 } else if ((a2 != c) && (i != 2)) {
-                    System.out.println("Следующая попытка");
+                   // Sys tem.out.println("Следующая попытка");
                 }
                 if ((i == 2) && (a2 != c)) {
                     System.out.println("Ты проиграл . Хочешь поиграть еще ? Да или нет ?");
