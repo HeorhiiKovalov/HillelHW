@@ -77,24 +77,23 @@ public class HW8 {
         }
         System.out.println(Arrays.toString(array));
         do{
-            for (int i = min; i < max ; i++) {
+            for (int i = min, j = max; i < max  && j > min; i++,j--) {
                 if(array[i] > array[i + 1]){
                     arrayAll = array[i];
                     array[i] = array[i + 1];
                     array[i + 1] = arrayAll;
                 }
-            }
-            max--;
-            for (int i = max; i > min; i--) {
-                if (array[i] < array[i - 1]) {
-                    arrayAll = array[i];
-                    array[i] = array[i - 1];
-                    array[i - 1] = arrayAll;
+                if (array[j] < array[j - 1]) {
+                    arrayAll = array[j];
+                    array[j] = array[j - 1];
+                    array[j - 1] = arrayAll;
                 }
             }
+            max--;
             min++;
         }while(min < max);
-        System.out.println(Arrays.toString(array));//пришлось сортировку немного подсмотреть в интернете , затупил немного
+        System.out.println(Arrays.toString(array));
+
 
     }
 }
