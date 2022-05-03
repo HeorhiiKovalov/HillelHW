@@ -43,6 +43,7 @@ public class MAIN {
         E5.sallary = 42000;
         E5.age = 48;
 
+        E1.info();
 
         EMPLOYEES[] emplo = {E1,E2,E3,E4,E5};
 
