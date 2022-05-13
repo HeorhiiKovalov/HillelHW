@@ -7,7 +7,7 @@ public class HW12 {
                 summ += a[i];
         }
         int sA = summ / a.length;
-        if(sA <= 0){
+        if(sA == 0){
             return false;
         }
         return true;
