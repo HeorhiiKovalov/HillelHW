@@ -1,4 +1,5 @@
 import com.Kovalov.HW12.HW12;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class TestHW12 {
@@ -7,12 +8,12 @@ public class TestHW12 {
     int [][] c = {{1,2,3},{1,2,3},{1,2,3}};
     @Test
     public void testHW12(){
-       a.task1(b);
+       Assertions.assertFalse(a.task1(b));
     }
 
     @Test
     public void testTask2(){
-        a.task2(c);
+        Assertions.assertTrue(a.task2(c));
     }
 
 }
