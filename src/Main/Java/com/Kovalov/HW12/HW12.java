@@ -8,9 +8,9 @@ public class HW12 {
         }
         int sA = summ / a.length;
         if(sA <= 0){
-            return true;
+            return false;
         }
-        return false;
+        return true;
     }
 
     public boolean task2(int[][]a){

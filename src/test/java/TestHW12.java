@@ -8,7 +8,7 @@ public class TestHW12 {
     int [][] c = {{1,2,3},{1,2,3},{1,2,3}};
     @Test
     public void testHW12(){
-       Assertions.assertFalse(a.task1(b));
+       Assertions.assertTrue(a.task1(b));
     }
 
     @Test
