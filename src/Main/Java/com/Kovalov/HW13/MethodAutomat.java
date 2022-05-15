@@ -3,17 +3,15 @@ package com.Kovalov.HW13;
 import com.Kovalov.HW13.DrinksMachine.*;
 import com.Kovalov.HW13.Drinks.*;
 import com.Kovalov.HW13.AutomatMain.*;
-
 import java.util.Scanner;
 
 public class MethodAutomat {
 
     int c = 0;
     public static int coast = 0;
-    public void total(int cost){
+    public void Total(int cost){
         c++;
         coast += cost;
-
     }
     public void mCoke(){
         DrinksMachine coke = DrinksMachine.COKE;
@@ -33,43 +31,39 @@ public class MethodAutomat {
     public void mGased(){
         DrinksMachine gased = DrinksMachine.GASED;
     }
-
-    public int choose(int a){
-        Scanner choose = new Scanner(System.in);
-        String choose1 = choose.nextLine();
+    public void Choose(int a,String choose1){
+  //      Scanner choose = new Scanner(System.in);
+  //      String choose1 = choose.nextLine();
         switch(choose1){
             case("coke"):
                 mCoke();
-                total(Drinks.COKEC);
+                Total(Drinks.COKEC);
                 break;
             case("coffee"):
                 mCoffee();
-                total(Drinks.COFFEEC);
+                Total(Drinks.COFFEEC);
                 break;
             case("tee"):
                 mTee();
-                total(Drinks.TEEC);
+                Total(Drinks.TEEC);
                 break;
             case("limonade"):
                 mLimonade();
-                total(Drinks.LIMONADEC);
+                Total(Drinks.LIMONADEC);
                 break;
             case("mojito"):
                 mMojito();
-                total(Drinks.MOJITOC);
+                Total(Drinks.MOJITOC);
                 break;
             case("gased"):
                 mGased();
-                total(Drinks.GASEDC);
+                Total(Drinks.GASEDC);
                 break;
             case("pay"):
                 a++;
                 System.out.println("pay " + coast + " $  for " + c + " items");
-
                 break;
-
         }
-        return a;
     }
 
 

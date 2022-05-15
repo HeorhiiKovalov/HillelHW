@@ -7,5 +7,4 @@ public enum DrinksMachine {
     MOJITO,
     GASED,
     COKE;
-    private int coast;
 }
