@@ -12,26 +12,32 @@ public class MethodAutomat {
 
     public void mCoke() {
         DrinksMachine coke = DrinksMachine.COKE;
+        System.out.println("coke issued");
     }
 
     public void mCoffee() {
         DrinksMachine coffee = DrinksMachine.COFFEE;
+        System.out.println("coffee is made");
     }
 
     public void mTee() {
         DrinksMachine tee = DrinksMachine.TEE;
+        System.out.println("tee is made");
     }
 
     public void mLimonade() {
         DrinksMachine limonade = DrinksMachine.LIMONADE;
+        System.out.println("limonade issued");
     }
 
     public void mMojito() {
         DrinksMachine mojito = DrinksMachine.MOJITO;
+        System.out.println("mojito is made");
     }
 
     public void mGased() {
         DrinksMachine gased = DrinksMachine.GASED;
+        System.out.println("gased water issued");
     }
 
     public void Choose(int a, String choose1) {
