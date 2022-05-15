@@ -6,5 +6,5 @@ public enum DrinksMachine {
     LIMONADE,
     MOJITO,
     GASED,
-    COKE;
+    COKE,
 }
